@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temple</title>
+</head>
+<style>
+#svg1{
+  background-size: cover;
+  background-color: #a6c2ce;
+}
+  .light {
+  background:#d18237;
+/* 	background: linear-gradient(50deg,hsla(37, 100%, 80%, 0.58),hsla(37, 100%, 80%, 0)); */
+  width: 20%;
+  height: 110%;
+  position: absolute;
+  }
+.l1 {
+  top: -30%;
+  right: 29%;
+  transform: perspective(70px) rotateX(785deg) rotateZ(18deg) scale(0.7);
+  animation: light 2s infinite alternate,light2 3s infinite alternate;
+  }
+
+@keyframes light {
+  from{
+    opacity: 0
+  }
+  to{
+    opacity: 0.2
+  }
+}
+@keyframes light2{
+  from{
+    width: 3%;
+  }
+  to{
+    width: 5%;
+  }
+  }
+
+</style>
+<body>
+  <div  class="canvas"  viewbox="0 0 1200 800">
+
+    <svg id="svg1" viewbox="0 -90 1200 800">
+      
+     <svg class="sun" viewbox="-216 -50 100 550">
+      <circle cx="0" cy="0" r="40" fill="#d66c44">
+           <animate attributeName="r" values="0;30;30;0" dur="6s" repeatCount="indefinite" />
+       </circle>
+      
+        <circle cx="0" cy="0" r="40" fill="#d18237">
+           <animate attributeName="r" values="0;30;30;0" dur="5s" repeatCount="indefinite" />
+       </circle>
+      
+  </svg>
+   <svg  viewbox="-85 -55 100 250">
+     <g id="cloud2">
+      <path d="M70,-15 l-2,5 l10,-5 z"fill="#e7e6eb"/>
+      <path d="M68,-10 l6,-3 l-3,7 z"fill="#dedee0"/>
+      <path d="M74,-13 l-3,7 l6,0 z"fill="#d1d1d3"/>
+      <path d="M74,-13 l4,-2 l1,8 l-2,1 z"fill="#dedee0"/>
+      <path d="M78,-15 l6,-2 l-5,10 z"fill="#e5e5e7"/>
+      <path d="M84,-17 l-2.5,5 l4,0 z"fill="#dcdcde"/>
+      <path d="M81.5,-12 l4,0 l-2,6 l-4.5,-1 z"fill="#d4d4d6"/>
+      <path d="M84,-17 l1.5,5 l6,-2 z"fill="#efeff1"/>
+      <path d="M85.5,-12 l6,-2 l-1,5 z"fill="#dedee0"/>
+      <path d="M85.5,-12 l-2,6 l7,-3 z"fill="#cacacc"/>
+    </g>
+    </svg>
+     <svg  viewbox="130 -55 100 250">
+     <g id="cloud2">
+      <path d="M70,-15 l-2,5 l10,-5 z"fill="#e7e6eb"/>
+      <path d="M68,-10 l6,-3 l-3,7 z"fill="#dedee0"/>
+      <path d="M74,-13 l-3,7 l6,0 z"fill="#d1d1d3"/>
+      <path d="M74,-13 l4,-2 l1,8 l-2,1 z"fill="#dedee0"/>
+      <path d="M78,-15 l6,-2 l-5,10 z"fill="#e5e5e7"/>
+      <path d="M84,-17 l-2.5,5 l4,0 z"fill="#dcdcde"/>
+      <path d="M81.5,-12 l4,0 l-2,6 l-4.5,-1 z"fill="#d4d4d6"/>
+      <path d="M84,-17 l1.5,5 l6,-2 z"fill="#efeff1"/>
+      <path d="M85.5,-12 l6,-2 l-1,5 z"fill="#dedee0"/>
+      <path d="M85.5,-12 l-2,6 l7,-3 z"fill="#cacacc"/>
+    </g>
+    </svg>
+  
+    <svg viewbox="0 0 1000 600">
+      <!--ซ้าย-->
+      <path d="M 480 420 L 180 270 L 480 150 L 780 270 L 480 420 L 480 480 L 180 330 L 180 270 L 480 420 L 480 420 L 480 480 L 780 330 L 780 270 " fill="#e1dcd9"/>
+        <!--ขอบขวา--> 
+       <path d="M 480 420 L 180 330  L 480 420 L 480 420 L 480 480 L 780 330 L 780 270 " fill="#8f8681"/>
+         <!--ขอบบน--> 
+       <path d="M 480 420 L 180 270 L 480 150 L 780 270 L 480 420 L 480 480  " fill="#496a23"/> 
+          </svg>
+       
+          
+       
+     <svg viewbox="-48 -61 1100 700"> 
+           <!--นำ้--> 
+          <path d="M 480 420 L 180 270 L 480 150 L 780 270 L 480 420 L 480 480  " fill="#80ceff" /> 
+          <!--ขอบขวา-->    
+         <path d="M 480 420 L 780 270 L 780 300 L 480 450 L 480 420 " fill="#4dbbff" /> 
+        <path d="M 480 420 L 480 420 L 180 270 L 180 300 L 480 450 " fill="#b3e3ff" /> 
+         </svg>
+             
+        
+  <!--   <svg viewbox="-205 -130 1350 950">  -->
+      <!--หิน--> 
+  <!--         <path d="M 480 420 L 180 270 L 480 150 L 780 270 L 480 420 L 480 480  " fill="#44565a" /> 
+         </svg> -->
+     
+    
+    <!--พื้นชั้น1-->  
+   <svg viewbox="-380 -55 1500 1000">
+       <path d="M 130 350 L 130 360 L 400 500 L 670 370 L 670 360 L 400 490 L 130 350 " fill="#553c2a"/>
+     </svg>
+     <svg viewbox="-380 -55 1500 1000"> 
+          <path d="M 400 490 L 670 360 L 400 490 L 130 350 L 400 250 L 670 360 " fill="#553c2a"/>
+      </svg>
+      
+     <!--ชั้นหนึ่ง-->
+       <svg viewbox="-430 -45 1400 900"> 
+  
+     <path d="M 390 330 L 270 270 L 400 210 L 510 270 L 390 330 L 390 330 L 390 390 L 510 330 L 510 270 L 390 330 L 390 390 L 270 330 L 270 270   " fill="#3a1f04"/>
+     </svg>
+       
+      <!--หน้าต่างชั้น1--> 
+        <svg viewbox="-430 -103 1400 900"> 
+  
+     <path d="M 420 270 L 450 255 L 450 295 L 420 310 L 420 270 " fill="#e4dace"/>
+     </svg>
+       <svg viewbox="-480 -80 1400 900"> 
+  
+     <path d="M 420 270 L 450 255 L 450 295 L 420 310 L 420 270 " fill="#e4dace"/>
+     </svg>
+       
+       
+       
+       
+       
+     
+      <!--เสาชั้นหนึ่ง--> 
+       <svg viewbox="-370 -110 1400 900"> 
+     <path d="M 360 360 L 350 350 L 350 280 L 360 290 L 360 360  " fill="#3a1f04"/>
+     <path d="M 360 360 L 370 350 L 370 280 L 360 290 L 360 360 " fill=" #301a03"/>
+     </svg>
+        <svg viewbox="-310 -80 1400 900"> 
+     <path d="M 360 360 L 350 350 L 350 280 L 360 290 L 360 360  " fill="#3a1f04"/>
+     <path d="M 360 360 L 370 350 L 370 280 L 360 290 L 360 360 " fill="#301a03"/>
+     </svg>
+        <svg viewbox="-250 -50 1400 900"> 
+     <path d="M 360 360 L 350 350 L 350 280 L 360 290 L 360 360  " fill="#3a1f04"/>
+     <path d="M 360 360 L 370 350 L 370 280 L 360 290 L 360 360 " fill="#301a03"/>
+     </svg>
+        <svg viewbox="-190 -20 1400 900"> 
+     <path d="M 360 360 L 350 350 L 350 280 L 360 290 L 360 360  " fill="#3a1f04"/>
+     <path d="M 360 360 L 370 350 L 370 280 L 360 290 L 360 360 " fill="#301a03"/>
+     </svg>
+       
+  <!--      <--รั้วชั้น1-->
+    
+  <!--      <svg viewbox="-570 -170 1800 1000"> 
+  
+     <path d="M 120 240 L 370 370 L 370 310 L 120 180 L 120 240 " fill="#78543b"/>
+     </svg>  -->
+      
+       
+       
+    
+       
+          <!--ก่อนชั้นสอง-->
+    <svg viewbox="-385 30 1500 1000"> 
+     <path d="M 130 350 L 130 360 L 400 500 L 670 370 L 670 360 L 400 490 L 130 350  " fill="#fedd80"/>
+     </svg>
+      <svg viewbox="-385 30  1500 1000"> 
+          <path d="M 400 490 L 670 360 L 400 490 L 130 350 L 400 250 L 670 360 " fill="#fedd80" />
+      </svg>
+     
+    <!--รั้วชั้นสอง-->        
+          <svg viewbox="-485 -140  1500 1000"> 
+          <path d="M 570 180 L 570 190 L 300 320 L 300 310 L 570 180 " fill="#ae7c1e" />
+          <path d="M 30 170 L 30 180 L 300 320 L 300 310 L 30 170 " fill="#dea53b" />
+      </svg>
+      <svg viewbox="-485 -40  1500 1000"> 
+          <path d="M 30 270 L 30 280 L 300 180 L 300 170 L 30 270 " fill="#dea53b" />
+          <path d="M 570 290 L 570 290 L 300 180 L 300 170 L 570 280 " fill="#ae7c1e" />
+      </svg>
+            
+      <!--สอง-->   
+        <svg viewbox="-290 -20 1500 1000"> 
+          <path d="M 400 250 L 400 350 L 400 250 L 300 200 L 300 300 L 400 350  " fill=" #ffcd1a"/>
+     </svg>  
+     <svg viewbox="-385 -90 1500 1000"> 
+  
+     <path d="M 400 250 L 640 130 L 640 230 L 400 350 L 400 250 L 300 200 L 300 300 L 400 350  " fill="#e4b660"/>
+       <path d="M 400 250 L 400 350 L 400 250 L 300 200 L 300 300 L 400 350  " fill="#ffd954"/>
+        </svg>
+       
+        
+      <!--หลังคาสอง-->
+        <svg viewbox="-385 -20 1500 1000"> 
+     <path d="M 400 280 L 400 350 L 400 280 L 620 180 L 670 220 L 400 350  " fill="#2b1e16"/>
+    <path d="M 400 280 L 400 350 L 400 280 L 220 190 L 140 220 L 400 350  " fill="#443022"/>
+  
+     </svg>  
+    
+      <!--ก่อนชั้นสาม-->
+      <svg viewbox="-102 330 900 300"> 
+     <path d="M 370 350 L 260 300 L 370 260 L 500 290 L 370 350 L 370 360 L 500 300 L 500 290 L 370 350 L 370 360 L 260 310 L 260 300 " fill="#fedd80"/>
+     </svg>
+    
+          
+    <!--รั้วหลังคาชั้นสาม-->
+     <svg viewbox="-62 250 900 500"> 
+     <path d="M 410 360 L 410 370 L 300 320 L 300 310 L 410 360 " fill="#dea53b"/>
+     </svg>
+        
+        <svg viewbox="-62 250 900 500"> 
+     <path d="M 410 360 L 410 370 L 540 310 L 540 300 L 410 360 " fill="#ae7c1e"/>
+     </svg>
+     
+      <svg viewbox="-62 250 900 500"> 
+     <path d="M 410 270 L 410 280 L 540 310 L 540 300 L 410 270 " fill="#ae7c1e"/>
+     </svg>
+        
+        <svg viewbox="-62 250 900 500"> 
+     <path d="M 410 270 L 410 280 L 300 320 L 300 310 L 410 270 " fill="#dea53b"/>
+     </svg>
+          
+          
+    
+  <!--ชั้นสาม-->
+        <svg viewbox="-182 280 1100 700"> 
+     <path d="M 400 440 L 490 400 L 490 330 L 400 370 L 400 440 " fill="#e4b660"/>
+     <path d="M 400 440 L 320 400 L 320 330 L 400 370 L 400 440 " fill="#ffd954"/>
+     </svg>
+         
+         
+     <!--หน้าต่างชั้นสาม-->   
+        <svg viewbox="-170 155 1100 700"> 
+     <path d="M 420 270 L 450 255 L 450 297 L 420 310 L 420 270 C 420 270 430 220 450 255 " fill="#b79c7b"/>
+     </svg>
+         <svg viewbox="-215 175 1100 700"> 
+     <path d="M 420 270 L 450 255 L 450 297 L 420 310 L 420 270 C 420 270 430 220 450 255 " fill="#b79c7b"/>
+     </svg>
+          <svg viewbox="-90 175 1100 700"> 
+     <path d="M 420 260 L 440 273 L 440 309 L 420 300 L 420 260 C 420 240 440 220 440 273 " fill="#c0a88c"/>
+     </svg>
+         <svg viewbox="-120 158 1100 700"> 
+     <path d="M 420 260 L 450 273 L 450 312 L 420 298 L 420 260 C 420 240 450 220 450 273 " fill="#c0a88c"/>
+     </svg>
+         
+         
+   
+         
+      <!--หลังคาชั้นสาม-->      
+    <svg viewbox="-228 380 1200 500"> 
+      
+    <path d="M 560 310 L 410 370 L 260 310 L 410 240 L 560 310 " fill="#443022"/>
+        <path d="M 560 310 L 410 370 L 410 370 L 410 240 L 560 310 " fill="#2b1e16"/>
+        </svg>
+   
+      
+      
+        
+        <svg viewbox="-60 -150 1000 500"> 
+     <path d="M 390 265 L 390 205 L 380 200 L 380 260 L 390 265 " fill="#80ceff"/>
+     </svg> 
+        <svg viewbox="-60 -125 1000 500"> 
+     <path d="M 420 280 L 380 260 L 380 270 L 420 290 L 420 280 " fill="#80ceff"/>
+      <path d="M 420 280 L 460 260 L 460 270 L 420 290 L 420 280 " fill="#80ceff"/>
+     </svg> 
+        <svg viewbox="-60 -120 1000 500"> 
+     <path d="M 460 290 L 460 265 L 470 260 L 470 285 L 460 290 " fill="#80ceff"/>
+     </svg> 
+        
+       <!-- จุดน้ำ-->
+        <svg viewbox="-20 -10 1000 500"> 
+     <path d="M 410 280 L 390 270 L 370 280 L 390 290 L 410 280 " fill="#d2eeff"/>
+     </svg> 
+        <svg viewbox="70 50 1000 500"> 
+     <path d="M 410 280 L 390 270 L 370 280 L 390 290 L 410 280 " fill="#d2eeff"/>
+     </svg> 
+  <!--       <svg viewbox="-200 0 1000 500"> 
+     <path d="M 410 280 L 390 270 L 370 280 L 390 290 L 410 280 " fill=""/>
+     </svg>  -->
+        <svg viewbox="-150 -230 1500 1000"> 
+     <path d="M 410 280 L 390 270 L 370 280 L 390 290 L 410 280 " fill="#d2eeff"/>
+     </svg> 
+  <!--       <svg viewbox="-600 -230 1500 1000"> 
+     <path d="M 410 280 L 390 270 L 370 280 L 390 290 L 410 280 " fill=""/>
+     </svg>  -->
+        
+         <!--ต้นไม้-->
+      <svg viewBox="157 -323 1000 800">
+         <svg height="800" width="1300" viewBox="0 0 1000 4500">
+     <path d="M 400 740 L 400 360 L 320 340 L 320 640 Z"fill="#A6615C "/>
+    <path d="M 400 340 L 400 740 L 400 340 L 520 320 L 520 700 L 400 740 "fill="#562521"/>
+    <path d="M 400 220 L 260 320 L 400 220 L 520 320 L 400 380 L 260 320 "fill="#834945 "/> 
+    <path d="M 280 220 L 420 100 L 560 220 L 420 340 L 280 220   "fill="#27A333 "/>
+    <path d="M 280 220 L 420 340 L 280 220 L 280 240 L 420 360 L 420 340   "fill="#30523D "/>
+    <path d="M 560 220 L 420 340 L 560 220 L 560 240 L 420 360 L 420 340 "fill="#30523D"/>
+    <path d="M 240 220 L 180 200 L 220 160 L 280 180 L 240 220 L 180 200 L 240 220 L 280 180"fill="#19BD29 "/>
+    <path d="M 240 220 L 180 200 L 180 220 L 240 240 L 240 220 L 180 200 L 240 220"fill="#1B7E25 "/>
+    <path d="M 240 220 L 240 240 L 240 220 L 240 220 L 280 180 L 280 200 L 240 240  "fill="#1B7E25 "/>
+    <path d="M 240 240 L 240 320 L 240 240 L 260 220 L 260 280 L 240 320"fill="#9E561D "/>
+    <path d="M 240 320 L 260 340 L 280 300 L 260 280 L 260 280 L 240 320  "fill="#8D4B16 "/>
+    <path d="M 220 240 L 220 340 L 240 320 L 240 240 Z"fill="#81532F"/>
+    <path d="M 220 340 L 260 360 L 260 340 L 240 320 Z"fill="#614229"/>
+    <path d="M 180 380 L 280 440 L 380 380 L 280 320 Z"fill="#18C319  "/>
+    <path d="M 180 420 L 280 480 L 280 440 L 180 380 Z"fill="#5CEA5C "/>
+    <path d="M 380 420 L 280 480 L 280 440 L 380 380 Z"fill="#249824 "/>
+    <path d="M 520 600 L 640 520 L 520 480 L 400 520 Z"fill="#2B9925"/>
+    <path d="M 520 640 L 520 600 L 400 520 L 400 560 Z"fill="#32A72C "/>
+    <path d="M 520 640 L 520 600 L 640 520 L 640 560 Z"fill="#10560C "/>
+    <path d="M 580 420 L 760 320 L 940 420 L 760 540 Z"fill="#1EA817 "/>
+    <path d="M 580 420 L 580 460 L 760 580 L 760 540 Z"fill="#4BBE45 "/>
+    <path d="M 940 420 L 940 460 L 760 580 L 760 540 Z"fill="#2C8327 "/>
+    <path d="M 580 420 L 580 440 L 460 460 L 480 440 Z"fill="#AE412C"/>
+    <path d="M 580 460 L 580 440 L 460 460 L 480 480 Z"fill="#6F2A1C"/>
+    <path d="M 760 400 L 660 340 L 760 280 L 860 340 Z"fill="#1EA817"/>
+    <path d="M 760 400 L 660 340 L 660 380 L 760 440 Z"fill="#4BBE45"/>
+    <path d="M 760 400 L 860 340 L 860 380 L 760 440 Z"fill="#2C8327"/>
+  </svg>
+      </svg>  
+      <!--ก้อนหิน-->
+         
+         <svg viewbox="40 -110 500 1000">  
+      <svg viewbox="-100 -90 300 300">
+    <polygon points="20,54 28,58 28,65 24,63 20,65 16,61 " style="fill:#a0a8ab"/>
+     <polygon points="16,61 20,65 24,63 28,65 28,77 20,74 " style="fill:#a0a8ab"/>
+     <polygon points="28,58 44,50 45,56 46,58 40,58 36,62 38,71 38,76 28,77 28,65  " style="fill:#6c767a"/>
+    <polygon points="20,54 28,58 44,50 34,46 40,43 40,40 29,38 26,40 28,48 " style="fill:#bbc1c3"/>
+    
+     <polygon points="44,50 44,43 46,39 52,45 45,56" style="fill:#bbc1c3"/>
+    <polygon points="52,45 45,56 46,58 56,58 56,48" style="fill:#939c9f"/>
+    <polygon points="40,58 46,58 56,58 53,60 49,64 36,62" style="fill:#bbc1c3"/>
+    <polygon points="36,62 49,64 49,79 44,80 38,76 38,71" style="fill:#a0a8ab"/>
+    <polygon points="49,64 49,79 53,77 70,82 94,75 93,66 87,56 82,58 80,64 88,73 82,72 78,75 67,75 66,70 60,70 60,63 53,60" style="fill:#a0a8ab"/>
+    <polygon points="60,63 60,70 66,70 67,75 78,75 82,72 88,73 80,64 82,58 69,58 " style="fill:#939c9f"/>
+  <polygon points="53,60 58,59 71,55 80,54 87,56 82,58 69,58 60,63 " style="fill:#bbc1c3"/>
+    
+    <polygon points="34,46 44,50 44,43 46,39 46,34 43,35 40,40 40,43" style="fill:#6c767a"/>
+    <polygon points="32,32 36,30 46,32 46,34 43,35 35,35" style="fill:#bbc1c3"/>
+    <polygon points="40,40 29,38 29,34 34,24 51,32 51,34 48,38 46,39 46,34 46,32 36,30 32,32 35,35 43,35" style="fill:#a0a8ab"/>
+    <polygon points="34,24 40,23 60,23 66,24 61,25 51,32" style="fill:#bbc1c3"/>
+    <polygon points="66,24 68,27 58,28 51,34 51,32 61,25" style="fill:#939c9f"/>  <polygon points="48,38 51,34 58,28 68,27 75,30 80,38 78,40 71,44 65,44 58,44 " style="fill:#788387"/>
+    <polygon points="46,39 48,38 58,44 65,44 71,44 78,40 79,42 69,45 65,45 56,48 52,45" style="fill:#bbc1c3"/>
+    <polygon points="56,48 65,45 69,45 71,55 58,59 53,60 56,58" style="fill:#6c767a"/>
+    <polygon points="69,45 79,42 80,54 71,55" style="fill:#60696c"/>
+     <polygon points="82,58 87,56 93,66 94,75 81,79 82,72 88,73 80,64" style="fill:#60696c"/>
+    
+         </svg>  
+    </svg>
+   
+   <--ภูเขา-->
+   
+  <!--        <svg viewbox="67 -60 150 250">
+    <polygon points="34,44 40,46 35,56 26,54" style="fill:#0f3d0f"/>
+     <polygon points="34,44 41,44 45,45 40,46" style="fill:#79d2a6"/>
+    <polygon points="41,44 45,45 40,46" style="fill:#339966"/>
+     <polygon points="40,46 45,45 45,50 35,56" style="fill:#0a290a"/>
+    
+    <polygon points="41,44 47,31 51,36 51,54 45,50 45,45" style="fill:#0f3d0f"/>
+    <polygon points="51,36 55,31 60,41 55,50 51,54" style="fill:#0a290a"/>
+    <polygon points="47,31 49,28 51,26 51,36" style="fill:#79d2a6"/>
+    <polygon points="51,26 53,28 55,31 51,36" style="fill:#339966"/>
+    
+    <polygon points="64,45 67,41 71,50 64,56" style="fill:#0a290a"/>
+    <polygon points="60,41 64,45 64,56 55,50" style="fill:#0f3d0f"/>
+    <polygon points="63,38 64,38 64,45 60,41" style="fill:#79d2a6"/>
+    <polygon points="64,38 65,38 67,41 64,45" style="fill:#339966"/>
+  </svg> -->
+     
+      <!--ต้น2-->
+    <svg width="1000" height="1000"viewBox="1070 -1560 1000 7500">
+    <path d="M 500 150 L 350 250 L 500 350 L 650 250 Z"fill="#1BCB1C  "/>
+    <path d="M 350 550 L 350 250 L 500 350 L 500 650 Z"fill="#44AE45  "/>
+    <path d="M 650 550 L 650 250 L 500 350 L 500 650 Z"fill="#167D17 "/>
+    <path d="M 500 900 L 450 850 L 450 615 L 500 650 Z"fill="#AB5A14 "/>
+    <path d="M 500 900 L 550 850 L 550 615 L 500 650 Z"fill="#69370B "/>
+  </svg> 
+     
+        <!--ต้น3-->
+    <svg width="1000" height="1000"viewBox="1300 -3050 1000 12500">
+    <path d="M 500 150 L 350 250 L 500 350 L 650 250 Z"fill="#1BCB1C  "/>
+    <path d="M 350 550 L 350 250 L 500 350 L 500 650 Z"fill="#44AE45  "/>
+    <path d="M 650 550 L 650 250 L 500 350 L 500 650 Z"fill="#167D17 "/>
+    <path d="M 500 900 L 450 850 L 450 615 L 500 650 Z"fill="#AB5A14 "/>
+    <path d="M 500 900 L 550 850 L 550 615 L 500 650 Z"fill="#69370B "/>
+  </svg> 
+      
+   <!--ภูเขา-->
+   
+         <svg viewbox="67 -60 150 250">
+    <polygon points="34,44 40,46 35,56 26,54" style="fill:#0f3d0f"/>
+     <polygon points="34,44 41,44 45,45 40,46" style="fill:#79d2a6"/>
+    <polygon points="41,44 45,45 40,46" style="fill:#339966"/>
+     <polygon points="40,46 45,45 45,50 35,56" style="fill:#0a290a"/>
+    
+    <polygon points="41,44 47,31 51,36 51,54 45,50 45,45" style="fill:#0f3d0f"/>
+    <polygon points="51,36 55,31 60,41 55,50 51,54" style="fill:#0a290a"/>
+    <polygon points="47,31 49,28 51,26 51,36" style="fill:#79d2a6"/>
+    <polygon points="51,26 53,28 55,31 51,36" style="fill:#339966"/>
+    
+    <polygon points="64,45 67,41 71,50 64,56" style="fill:#0a290a"/>
+    <polygon points="60,41 64,45 64,56 55,50" style="fill:#0f3d0f"/>
+    <polygon points="63,38 64,38 64,45 60,41" style="fill:#79d2a6"/>
+    <polygon points="64,38 65,38 67,41 64,45" style="fill:#339966"/>
+  </svg>
+        <!--ต้น4-->
+    <svg width="1000" height="1000"viewBox="-5100 -3700 1000 12500">
+    <path d="M 500 150 L 350 250 L 500 350 L 650 250 Z"fill="#1BCB1C  "/>
+    <path d="M 350 550 L 350 250 L 500 350 L 500 650 Z"fill="#44AE45  "/>
+    <path d="M 650 550 L 650 250 L 500 350 L 500 650 Z"fill="#167D17 "/>
+    <path d="M 500 900 L 450 850 L 450 615 L 500 650 Z"fill="#AB5A14 "/>
+    <path d="M 500 900 L 550 850 L 550 615 L 500 650 Z"fill="#69370B "/>
+  </svg>   
+     
+           <!--ต้น5-->
+    <svg width="1000" height="1000"viewBox="-4500 -3500 1000 12500">
+    <path d="M 500 150 L 350 250 L 500 350 L 650 250 Z"fill="#1BCB1C  "/>
+    <path d="M 350 550 L 350 250 L 500 350 L 500 650 Z"fill="#44AE45  "/>
+    <path d="M 650 550 L 650 250 L 500 350 L 500 650 Z"fill="#167D17 "/>
+    <path d="M 500 900 L 450 850 L 450 615 L 500 650 Z"fill="#AB5A14 "/>
+    <path d="M 500 900 L 550 850 L 550 615 L 500 650 Z"fill="#69370B "/>
+  </svg>   
+     
+     
+     
+     
+     <!--ก้อน2-->
+       
+     <svg viewbox="-330 -900 300 1800">
+    <polygon points="17,30 41,20 56,20 70,28  35,42" style="fill:#bbc1c3"/>
+    <polygon points="17,30 16,41 13,50 19,56 28,53 35,58 35,42" style="fill:#a0a8ab"/>
+    <polygon points="13,50 19,56 28,53 35,58 35,80 20,73 12,60" style="fill:#a0a8ab"/>
+    <polygon points="70,28  73,40 67,40" style="fill:#788387"/>
+      <polygon points="70,28 67,40 60,40 51,50 55,68 55,80 35,80 35,58 35,42" style="fill:#939c9f"/>
+    
+    <polygon points="51,50 60,40 67,40 73,40 92,42 80,54 " style="fill:#bbc1c3"/>
+    <polygon points="51,50 55,68 55,80 66,85 78,85 80,54 " style="fill:#a0a8ab"/>
+    <polygon points="92,42 92,47 87,55 88,75 78,85 80,54 " style="fill:#a0a8ab"/>
+   <polygon points="92,47 94,50 94,76 78,85 88,75 87,55" style="fill:#939c9f"/>  
+  </svg>
+       
+          <!--ก้อน3-->
+       
+     <svg viewbox="-500 -870 300 1800">
+    <polygon points="17,30 41,20 56,20 70,28  35,42" style="fill:#bbc1c3"/>
+    <polygon points="17,30 16,41 13,50 19,56 28,53 35,58 35,42" style="fill:#a0a8ab"/>
+    <polygon points="13,50 19,56 28,53 35,58 35,80 20,73 12,60" style="fill:#a0a8ab"/>
+    <polygon points="70,28  73,40 67,40" style="fill:#788387"/>
+      <polygon points="70,28 67,40 60,40 51,50 55,68 55,80 35,80 35,58 35,42" style="fill:#939c9f"/>
+    
+    <polygon points="51,50 60,40 67,40 73,40 92,42 80,54 " style="fill:#bbc1c3"/>
+    <polygon points="51,50 55,68 55,80 66,85 78,85 80,54 " style="fill:#a0a8ab"/>
+    <polygon points="92,42 92,47 87,55 88,75 78,85 80,54 " style="fill:#a0a8ab"/>
+   <polygon points="92,47 94,50 94,76 78,85 88,75 87,55" style="fill:#939c9f"/>  
+  </svg>
+            
+              <!--ก้อน4-->
+       
+     <svg viewbox="-550 -800 300 1800">
+    <polygon points="17,30 41,20 56,20 70,28  35,42" style="fill:#bbc1c3"/>
+    <polygon points="17,30 16,41 13,50 19,56 28,53 35,58 35,42" style="fill:#a0a8ab"/>
+    <polygon points="13,50 19,56 28,53 35,58 35,80 20,73 12,60" style="fill:#a0a8ab"/>
+    <polygon points="70,28  73,40 67,40" style="fill:#788387"/>
+      <polygon points="70,28 67,40 60,40 51,50 55,68 55,80 35,80 35,58 35,42" style="fill:#939c9f"/>
+    
+    <polygon points="51,50 60,40 67,40 73,40 92,42 80,54 " style="fill:#bbc1c3"/>
+    <polygon points="51,50 55,68 55,80 66,85 78,85 80,54 " style="fill:#a0a8ab"/>
+    <polygon points="92,42 92,47 87,55 88,75 78,85 80,54 " style="fill:#a0a8ab"/>
+   <polygon points="92,47 94,50 94,76 78,85 88,75 87,55" style="fill:#939c9f"/>  
+  </svg>
+                
+                
+  
+                
+         
+       <!--kfc-->          
+       <svg viewbox="-108 25 170 1470">
+    <polygon points="27,18 35,25 30,25 23,25" style="fill:#ffe066"/>
+    <polygon points="23,27 23,25 30,25 29,35 23,38  " style="fill:#ffeb99"/>
+   <polygon points="19,29 23,27 23,30 " style="fill:#ffe066"/>
+    <polygon points="30,25 29,35 30,57 33,65 49,48 40,36" style="fill:#ffe066"/>
+    <polygon points="38,34 49,48 61,61 67,58 87,48 85,46 87,44 60,30" style="fill:#ffe066"/>
+    <polygon points="33,65 49,48 61,61 64,58 54,68 39,68 " style="fill:#ffeb99"/>
+  
+  </svg>
+  
+  </svg>
+       </svg>
+       <!-- <div class="light l1"></div> -->
+      </div>
+   
+      
+</body>
+</html>
