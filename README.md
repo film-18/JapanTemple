@@ -15,9 +15,9 @@
  
 # Our Clip VDO
 - https://www.youtube.com/watch?v=yPhdSUjQM5g&feature=youtu.be
-[![aEnFxt6MlXc](https://imgur.com/a/V0Yzxji)](https://www.youtube.com/watch?v=yPhdSUjQM5g&feature=youtu.be)
+[![](http://img.youtube.com/vi/yPhdSUjQM5g/0.jpg)](http://www.youtube.com/watch?v=yPhdSUjQM5g "https://imgur.com/a/RaowBJ9")
  
  # Our website
- ![Image description](https://imgur.com/a/AeiCKmB)
+
 
 
