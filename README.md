@@ -1,5 +1,5 @@
-# Project Final Multimedia62 
-## Kinkakuji Temple
+# Kinkakuji Temple
+#Project Final Multimedia62 
 
 # Member:
 1. 62070011
